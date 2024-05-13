@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Project in JS</title>
+    <link rel="stylesheet" href="webTask.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="main-container">
+        <!-- Start task Conatiner HTML -->
+        <div class="task-container ">
+
+            <div class="task active">
+                <i class="fa-regular fa-note-sticky"></i>
+                <p>Task</p>
+
+            </div>
+            <!--End task Conatiner HTML -->
+            <!--start Location Conatiner HTML -->
+
+            <div class="location">
+
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Location</p>
+
+            </div>
+            <!--End location Conatiner HTML -->
+            <!--Start Log Out Conatiner HTML -->
+
+
+            <div class="logOut">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <p>Log Out</p>
+            </div>
+
+        </div>
+        <!--End Log Out Conatiner HTML -->
+
+        <!-- Add New Task Container HTML -->
+
+        <div class="addTaskContainer">
+            <div class="addNewTask">
+                <div class="incomplete-task">
+                    <button id="addBtn">+ Add New Task</button>
+                    <p class="heading">Incomplete </p>
+                    <div class="items">
+                        <div class="todo-incomplete">
+
+                            <div class="taskContainer">
+                                <!-- <div class="checkBox"> 
+                                    <input type="checkbox" id="unChecked">
+                                </div>
+
+                                <div class="task-category">
+                                    <p>Submit my resume</p>
+                                    <p> ⏰ Today,17:00</p>
+                                </div> -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="completed-task">
+                    <div class="completedItems">
+                        <p class="heading">Completed</p>
+                        <div class="completedTodo">
+                            <div class="completedTask">
+                                <!-- <div class="imgTask">
+                                <img src="Unchecked.svg" alt="">
+                                </div>
+                                <div class="taskCategory">
+                                    <p>Respond to Jane email</p>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="completedTodo">
+                            <div class="completedTask">
+
+                            </div>
+                        </div>
+
+                        <div class="completedTodo">
+                            <div class="completedTask">
+
+                            </div>
+                        </div>
+
+                        <div class="completedTodo">
+                            <div class="completedTask">
+
+                            </div>
+                        </div>
+
+                        <div class="completedTodo">
+                            <div class="completedTask">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup box HTML -->
+
+    <div class="popup display-none">
+        <h4>New Task</h4>
+        <div class="popup-group">
+            <div class="summary">
+                <!-- <i class="fa-regular fa-comment"></i> -->
+                <img src="summary.svg">
+                <input type="text" id="summary" placeholder="Summary">
+            </div>
+            <div class="line5"></div>
+
+
+            <div class="description">
+                <!-- <i class="fa-regular fa-comment"></i> -->
+                <img src="description.svg">
+                <input type="text" id="description" placeholder="Description">
+            </div>
+            <div class="line6"></div>
+
+            <div class="due-Date">
+                <!-- <i class="fa-regular fa-comment"></i> -->
+                <img src="due date.svg">
+                <input type="datetime-local" id="due-date" placeholder="Due Date">
+            </div>
+            <div class="line7"></div>
+        </div>
+        <div class="buttons">
+
+            <button id="saveBtn">Save</button>
+            <button id="cancelBtn">Cancel</button>
+
+        </div>
+
+        <!-- Reminder-Popup HTML -->
+    </div>
+
+    <div id="reminder-popup-id" class="reminder-popup reminder-popup-hide">
+        <div class="summ-descrip-icon">
+            <div class="summ-descrip">
+                <p id="reminder-summary">Submit my resume</p>
+                <p id="reminder-descrip">Send my resume to DigitalTolk</p>
+            </div>
+            <img src="Frame.svg" />
+        </div>
+        <div class="reminder-btns">
+            <button id="skip-btn">Skip</button>
+            <button id="remind-later-btn">Remind me later</button>
+        </div>
+    </div>
+
+    <script src="webTask.js"></script>
+</body>
+
+</html>

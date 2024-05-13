@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFFFFF;
+    font-family: sans-serif;
+}
+
+/* Main Container CSS */
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Task Container CSS */
+
+.task-container {
+    position: relative;
+    width: 20%;
+    height: 100vh;
+}
+
+
+
+.task {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+
+    width: 100%;
+    height: 55px;
+    top: 42px;
+    padding: 16.55px 123px 15.55px 47px;
+    border-radius: 0px 100px 100px 0px;
+    background: #000000;
+    position: relative;
+}
+
+.task i {
+    color: #FFFFFF;
+    position: absolute;
+    left: 65px;
+    top: 17px;
+}
+
+
+.task p {
+    color: #FFFFFF;
+    position: absolute;
+    right: 145px;
+    top: 17px;
+}
+
+/* Location Conatiner CSS */
+
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 55px;
+    top: 100px;
+    left: 0px;
+    position: absolute;
+    border-radius: 0px 100px 100px 0px;
+    /* background: #000000; */
+    background: #FFFFFF;
+    padding: 16.55px 123px 15.55px 47px;
+}
+
+.location i {
+    color: #FFFFFF;
+    /* margin-right: 50px; */
+    /* margin-top: 3px; */
+    color: #000000;
+    position: absolute;
+    left: 65px;
+}
+
+.location p {
+    /* color: #FFFFFF; */
+    color: #000000;
+    /* margin-left: 15px; */
+    position: absolute;
+    right: 114px;
+    /* top: 3px; */
+    text-align: center;
+}
+
+
+/* LogOut Container CSS */
+
+
+.logOut {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    height: 55px;
+    top: 80vh;
+    left: 0px;
+    opacity: 0px;
+    position: relative;
+    border-radius: 0px 100px 100px 0px;
+    /* background: #000000; */
+    background: #FFFFFF;
+    padding: 16.55px 123px 15.55px 47px;
+}
+
+.logOut i {
+    /* color: #FFFFFF; */
+    color: #000000;
+    position: absolute;
+    left: 55px;
+    top: 19px;
+}
+
+.logOut p {
+    /* color: #FFFFFF; */
+    color: #000000;
+    position: absolute;
+    right: 125px;
+    top: 18px;
+}
+
+/* Web Location CSS */
+
+.webLocation {
+    width: 80%;
+    height: 100vh;
+    /* background: rebeccapurple; */
+}
+
+.locationTasks {
+    width: 342px;
+    height: 482px;
+    top: 59px;
+    left: 344px;
+    position: absolute;
+    /* border: 2px solid black; */
+}
+
+.incomplete-tasks {
+    width: 342px;
+    height: 127px;
+    /* border: 2px solid red; */
+}
+
+#btn {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background: transparent;
+}
+
+.items {
+    width: 342px;
+    height: 45px;
+    top: 82px;
+    position: absolute;
+    /* border: 2px solid gold; */
+}
+
+.todo-incomplete {
+    width: 342px;
+    height: 45px;
+    /* border: 2px solid olive; */
+}
+
+.taskContainer {
+    width: 342px;
+    height: 45px;
+    /* border: 2px solid orange; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.taskContainer label {
+    margin-right: 15px;
+}
+.task-container p{
+    margin-bottom: 5px;
+}
+
+
+
+/* Previous Location CSS */
+
+.previousLocation {
+    width: 342px;
+    height: 323px;
+    /* border: 2px solid black; */
+}
+
+.itemsComplete {
+    width: 342px;
+    height: 289px;
+    top: 187px;
+    position: absolute;
+    /* border: 2px solid red; */
+}
+
+.todo-complete {
+    width: 342px;
+    height: 45px;
+    /* border: 2px solid orangered; */
+    margin-bottom: 5px;
+}
+
+.completetaskContainer {
+    width: 342px;
+    height: 45px;
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.completetaskContainer p{
+    margin-right: 15px;
+}
+
+.taskCategory p{
+    margin-bottom: 5px;
+}
